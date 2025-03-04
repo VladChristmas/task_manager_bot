@@ -1,0 +1,9 @@
+[project]
+name = "telegram-bot-tasks"
+version = "0.1.0"
+description = "Telegram bot for task and report management"
+requires-python = ">=3.11"
+dependencies = [
+    "pyTelegramBotAPI==4.14.1",
+    "python-dotenv==1.0.1"
+]

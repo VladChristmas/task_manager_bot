@@ -1,0 +1,647 @@
+2025-02-26 19:26:21,732 - database - INFO - База данных успешно инициализирована
+2025-02-26 19:26:21,733 - database - INFO - База данных успешно инициализирована
+2025-02-26 19:26:21,733 - __main__ - INFO - База данных успешно инициализирована
+2025-02-26 19:26:21,755 - handlers - INFO - Handlers registered successfully
+2025-02-26 19:26:21,755 - handlers - INFO - Registered commands: /start, /help, /addchat, /submit_report, /my_reports, /collect_reports
+2025-02-26 19:26:21,756 - __main__ - INFO - Запуск Telegram бота...
+2025-02-26 19:26:22,218 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getMe "HTTP/1.1 200 OK"
+2025-02-26 19:26:22,373 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-26 19:26:22,375 - telegram.ext.Application - INFO - Application started
+2025-02-26 19:26:32,826 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:26:42,974 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:26:53,123 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:27:03,279 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:27:13,427 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:27:23,577 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:27:33,726 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:27:43,876 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:27:51,687 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:27:51,688 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-02-26 19:27:51,688 - telegram.ext.Application - INFO - Application.stop() complete
+2025-02-26 19:27:51,688 - __main__ - ERROR - Ошибка запуска бота: Cannot close a running event loop
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 55, in start
+    await self.app.run_polling(drop_pending_updates=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1022, in __run
+    loop.close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+2025-02-26 19:27:51,691 - __main__ - INFO - Останавливаем бота...
+2025-02-26 19:27:51,692 - __main__ - ERROR - Ошибка при остановке бота: This Application is not running!
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 55, in start
+    await self.app.run_polling(drop_pending_updates=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1022, in __run
+    loop.close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 67, in stop
+    await self.app.stop()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 650, in stop
+    raise RuntimeError("This Application is not running!")
+RuntimeError: This Application is not running!
+2025-02-26 19:27:51,693 - __main__ - ERROR - Критическая ошибка при запуске приложения: Cannot close a running event loop
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 80, in <module>
+    asyncio.run(bot.start())
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 30, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 98, in run_until_complete
+    return f.result()
+           ^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/bot.py", line 55, in start
+    await self.app.run_polling(drop_pending_updates=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1022, in __run
+    loop.close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+2025-02-26 19:27:52,321 - database - INFO - База данных успешно инициализирована
+2025-02-26 19:27:52,321 - database - INFO - База данных успешно инициализирована
+2025-02-26 19:27:52,321 - __main__ - INFO - База данных успешно инициализирована
+2025-02-26 19:27:52,342 - handlers - INFO - Handlers registered successfully
+2025-02-26 19:27:52,342 - handlers - INFO - Registered commands: /start, /help, /addchat, /submit_report, /my_reports, /collect_reports
+2025-02-26 19:27:52,342 - __main__ - INFO - Запуск Telegram бота...
+2025-02-26 19:27:52,811 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getMe "HTTP/1.1 200 OK"
+2025-02-26 19:27:52,962 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-26 19:27:52,963 - telegram.ext.Application - INFO - Application started
+2025-02-26 19:28:03,421 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:28:13,578 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:28:23,729 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:28:33,881 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:28:44,034 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:28:54,181 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:29:00,823 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:29:00,824 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-02-26 19:29:00,824 - telegram.ext.Application - INFO - Application.stop() complete
+2025-02-26 19:29:00,825 - __main__ - ERROR - Ошибка запуска бота: Cannot close a running event loop
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 55, in start
+    await self.app.run_polling(drop_pending_updates=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1022, in __run
+    loop.close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+2025-02-26 19:29:00,827 - __main__ - INFO - Останавливаем бота...
+2025-02-26 19:29:00,828 - __main__ - ERROR - Ошибка при остановке бота: This Application is not running!
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 55, in start
+    await self.app.run_polling(drop_pending_updates=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1022, in __run
+    loop.close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 67, in stop
+    await self.app.stop()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 650, in stop
+    raise RuntimeError("This Application is not running!")
+RuntimeError: This Application is not running!
+2025-02-26 19:29:00,828 - __main__ - ERROR - Критическая ошибка при запуске приложения: Cannot close a running event loop
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 80, in <module>
+    asyncio.run(bot.start())
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 30, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 98, in run_until_complete
+    return f.result()
+           ^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/bot.py", line 55, in start
+    await self.app.run_polling(drop_pending_updates=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1022, in __run
+    loop.close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+2025-02-26 19:29:01,422 - database - INFO - База данных успешно инициализирована
+2025-02-26 19:29:01,422 - database - INFO - База данных успешно инициализирована
+2025-02-26 19:29:01,423 - __main__ - INFO - База данных успешно инициализирована
+2025-02-26 19:29:01,446 - handlers - INFO - Handlers registered successfully
+2025-02-26 19:29:01,446 - handlers - INFO - Registered commands: /start, /help, /addchat, /submit_report, /my_reports, /collect_reports
+2025-02-26 19:29:01,446 - __main__ - INFO - Запуск Telegram бота...
+2025-02-26 19:29:01,902 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getMe "HTTP/1.1 200 OK"
+2025-02-26 19:29:02,049 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-26 19:29:02,050 - telegram.ext.Application - INFO - Application started
+2025-02-26 19:29:12,508 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:29:22,660 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:29:32,813 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:29:42,968 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:29:53,119 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:30:03,289 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:30:13,747 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:30:13,748 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-02-26 19:30:13,748 - telegram.ext.Application - INFO - Application.stop() complete
+2025-02-26 19:30:13,748 - __main__ - ERROR - Ошибка запуска бота: Cannot close a running event loop
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 55, in start
+    await self.app.run_polling(drop_pending_updates=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1022, in __run
+    loop.close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+2025-02-26 19:30:13,751 - __main__ - INFO - Останавливаем бота...
+2025-02-26 19:30:13,751 - __main__ - ERROR - Ошибка при остановке бота: This Application is not running!
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 55, in start
+    await self.app.run_polling(drop_pending_updates=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1022, in __run
+    loop.close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 67, in stop
+    await self.app.stop()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 650, in stop
+    raise RuntimeError("This Application is not running!")
+RuntimeError: This Application is not running!
+2025-02-26 19:30:13,752 - __main__ - ERROR - Критическая ошибка при запуске приложения: Cannot close a running event loop
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 80, in <module>
+    asyncio.run(bot.start())
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 30, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 98, in run_until_complete
+    return f.result()
+           ^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/bot.py", line 55, in start
+    await self.app.run_polling(drop_pending_updates=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1022, in __run
+    loop.close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+2025-02-26 19:30:14,640 - database - INFO - База данных успешно инициализирована
+2025-02-26 19:30:14,642 - database - INFO - База данных успешно инициализирована
+2025-02-26 19:30:14,642 - __main__ - INFO - База данных успешно инициализирована
+2025-02-26 19:30:14,670 - handlers - INFO - Handlers registered successfully
+2025-02-26 19:30:14,670 - handlers - INFO - Registered commands: /start, /help, /addchat, /submit_report, /my_reports, /collect_reports, /debug_db
+2025-02-26 19:30:14,670 - __main__ - INFO - Запуск Telegram бота...
+2025-02-26 19:30:15,134 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getMe "HTTP/1.1 200 OK"
+2025-02-26 19:30:15,282 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-26 19:30:15,284 - telegram.ext.Application - INFO - Application started
+2025-02-26 19:30:25,731 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:30:31,314 - database - INFO - База данных успешно инициализирована
+2025-02-26 19:30:31,315 - database - INFO - База данных успешно инициализирована
+2025-02-26 19:30:31,315 - __main__ - INFO - База данных успешно инициализирована
+2025-02-26 19:30:31,338 - handlers - INFO - Handlers registered successfully
+2025-02-26 19:30:31,339 - handlers - INFO - Registered commands: /start, /help, /addchat, /submit_report, /my_reports, /collect_reports, /debug_db
+2025-02-26 19:30:31,339 - __main__ - INFO - Запуск Telegram бота...
+2025-02-26 19:30:31,801 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getMe "HTTP/1.1 200 OK"
+2025-02-26 19:30:31,950 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-26 19:30:31,952 - telegram.ext.Application - INFO - Application started
+2025-02-26 19:30:42,403 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:30:52,556 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:31:02,710 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:31:08,192 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:31:08,193 - handlers - INFO - Получена команда /start от пользователя 5171183387
+2025-02-26 19:31:08,666 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/sendMessage "HTTP/1.1 200 OK"
+2025-02-26 19:31:08,667 - handlers - INFO - Главное меню успешно отображено
+2025-02-26 19:31:18,345 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:31:23,150 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:31:23,151 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-02-26 19:31:23,152 - telegram.ext.Application - INFO - Application.stop() complete
+2025-02-26 19:31:23,152 - __main__ - ERROR - Ошибка запуска бота: Cannot close a running event loop
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 55, in start
+    await self.app.run_polling(drop_pending_updates=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1022, in __run
+    loop.close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+2025-02-26 19:31:23,156 - __main__ - INFO - Останавливаем бота...
+2025-02-26 19:31:23,156 - __main__ - ERROR - Ошибка при остановке бота: This Application is not running!
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 55, in start
+    await self.app.run_polling(drop_pending_updates=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1022, in __run
+    loop.close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 67, in stop
+    await self.app.stop()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 650, in stop
+    raise RuntimeError("This Application is not running!")
+RuntimeError: This Application is not running!
+2025-02-26 19:31:23,158 - __main__ - ERROR - Критическая ошибка при запуске приложения: Cannot close a running event loop
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 80, in <module>
+    asyncio.run(bot.start())
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 30, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 98, in run_until_complete
+    return f.result()
+           ^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/bot.py", line 55, in start
+    await self.app.run_polling(drop_pending_updates=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1022, in __run
+    loop.close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+2025-02-26 19:31:23,855 - database - INFO - База данных успешно инициализирована
+2025-02-26 19:31:23,855 - database - INFO - База данных успешно инициализирована
+2025-02-26 19:31:23,856 - __main__ - INFO - База данных успешно инициализирована
+2025-02-26 19:31:23,885 - handlers - INFO - Handlers registered successfully
+2025-02-26 19:31:23,886 - handlers - INFO - Registered commands: /start, /help, /addchat, /submit_report, /my_reports, /collect_reports, /debug_db
+2025-02-26 19:31:23,886 - __main__ - INFO - Запуск Telegram бота...
+2025-02-26 19:31:24,351 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getMe "HTTP/1.1 200 OK"
+2025-02-26 19:31:24,501 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-26 19:31:24,503 - telegram.ext.Application - INFO - Application started
+2025-02-26 19:31:34,958 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:31:45,122 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:31:50,679 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:31:50,681 - handlers - INFO - Получена команда /start от пользователя 5171183387
+2025-02-26 19:31:51,164 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/sendMessage "HTTP/1.1 200 OK"
+2025-02-26 19:31:51,165 - handlers - INFO - Главное меню успешно отображено
+2025-02-26 19:31:55,724 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:31:55,726 - handlers - INFO - Получена команда /debug_db от пользователя 5171183387
+2025-02-26 19:31:55,726 - database - INFO - Выполняется SQL запрос: SELECT COUNT(*) as count FROM chats
+2025-02-26 19:31:55,726 - database - INFO - Получено результатов: 1
+2025-02-26 19:31:55,727 - database - INFO - Выполняется SQL запрос: SELECT COUNT(*) as count FROM chat_groups
+2025-02-26 19:31:55,727 - database - INFO - Получено результатов: 1
+2025-02-26 19:31:55,727 - database - INFO - Выполняется SQL запрос: SELECT COUNT(*) as count FROM tasks
+2025-02-26 19:31:55,727 - database - INFO - Получено результатов: 1
+2025-02-26 19:31:55,728 - database - INFO - Выполняется SQL запрос: 
+            SELECT chat_id, title, is_group, added_at
+            FROM chats
+            ORDER BY added_at DESC
+            LIMIT 5
+        
+2025-02-26 19:31:55,728 - database - INFO - Получено результатов: 1
+2025-02-26 19:31:55,897 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/sendMessage "HTTP/1.1 200 OK"
+2025-02-26 19:31:55,898 - handlers - INFO - Отправлена отладочная информация о базе данных
+2025-02-26 19:32:05,877 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:32:16,027 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:32:17,746 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:32:17,748 - handlers - INFO - Получено текстовое сообщение от пользователя 5171183387: 👥 Просмотр списка подключенных чатов
+2025-02-26 19:32:17,748 - handlers - INFO - Получена команда просмотра подключенных чатов от пользователя 5171183387
+2025-02-26 19:32:17,749 - database - INFO - Выполняется SQL запрос: 
+            SELECT chat_id, title, is_group, added_at
+            FROM chats
+            ORDER BY added_at DESC
+        
+2025-02-26 19:32:17,749 - database - INFO - Получено результатов: 1
+2025-02-26 19:32:17,749 - handlers - INFO - Найдено чатов в базе данных: 1
+2025-02-26 19:32:18,234 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/sendMessage "HTTP/1.1 200 OK"
+2025-02-26 19:32:18,235 - handlers - INFO - Список подключенных чатов успешно отправлен
+2025-02-26 19:32:24,560 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:32:24,562 - handlers - INFO - Получено текстовое сообщение от пользователя 5171183387: 📋 Просмотр активных заданий
+2025-02-26 19:32:24,562 - handlers - INFO - Получена команда просмотра активных заданий от пользователя 5171183387
+2025-02-26 19:32:24,563 - database - INFO - Выполняется SQL запрос: 
+            SELECT t.*, tm.file_id, tm.file_type
+            FROM tasks t
+            LEFT JOIN task_media tm ON t.id = tm.task_id
+            WHERE t.status = 'active'
+            ORDER BY t.created_at DESC
+        
+2025-02-26 19:32:24,564 - database - INFO - Получено результатов: 2
+2025-02-26 19:32:25,218 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/sendMessage "HTTP/1.1 200 OK"
+2025-02-26 19:32:25,219 - handlers - INFO - Список активных заданий успешно отправлен
+2025-02-26 19:32:32,812 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:32:32,813 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-02-26 19:32:32,813 - telegram.ext.Application - INFO - Application.stop() complete
+2025-02-26 19:32:32,814 - __main__ - ERROR - Ошибка запуска бота: Cannot close a running event loop
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 55, in start
+    await self.app.run_polling(drop_pending_updates=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1022, in __run
+    loop.close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+2025-02-26 19:32:32,819 - __main__ - INFO - Останавливаем бота...
+2025-02-26 19:32:32,819 - __main__ - ERROR - Ошибка при остановке бота: This Application is not running!
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 55, in start
+    await self.app.run_polling(drop_pending_updates=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1022, in __run
+    loop.close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 67, in stop
+    await self.app.stop()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 650, in stop
+    raise RuntimeError("This Application is not running!")
+RuntimeError: This Application is not running!
+2025-02-26 19:32:32,820 - __main__ - ERROR - Критическая ошибка при запуске приложения: Cannot close a running event loop
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot.py", line 80, in <module>
+    asyncio.run(bot.start())
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 30, in run
+    return loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/nest_asyncio.py", line 98, in run_until_complete
+    return f.result()
+           ^^^^^^^^^^
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/bot.py", line 55, in start
+    await self.app.run_polling(drop_pending_updates=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 818, in run_polling
+    return self.__run(
+           ^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1022, in __run
+    loop.close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/unix_events.py", line 68, in close
+    super().close()
+  File "/nix/store/clx0mcir7qw8zk36zbr4jra789g3knf6-python3-3.11.10/lib/python3.11/asyncio/selector_events.py", line 88, in close
+    raise RuntimeError("Cannot close a running event loop")
+RuntimeError: Cannot close a running event loop
+2025-02-26 19:32:33,892 - database - INFO - База данных успешно инициализирована
+2025-02-26 19:32:33,892 - database - INFO - База данных успешно инициализирована
+2025-02-26 19:32:33,893 - __main__ - INFO - База данных успешно инициализирована
+2025-02-26 19:32:33,932 - handlers - INFO - Handlers registered successfully
+2025-02-26 19:32:33,932 - handlers - INFO - Registered commands: /start, /help, /addchat, /submit_report, /my_reports, /collect_reports, /debug_db
+2025-02-26 19:32:33,933 - __main__ - INFO - Запуск Telegram бота...
+2025-02-26 19:32:34,398 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getMe "HTTP/1.1 200 OK"
+2025-02-26 19:32:34,546 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/deleteWebhook "HTTP/1.1 200 OK"
+2025-02-26 19:32:34,548 - telegram.ext.Application - INFO - Application started
+2025-02-26 19:32:41,530 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:32:41,532 - handlers - INFO - Получено текстовое сообщение от пользователя 5171183387: ⚙️ Настройки
+2025-02-26 19:32:41,532 - handlers - INFO - Открытие настроек пользователем 5171183387
+2025-02-26 19:32:42,034 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/sendMessage "HTTP/1.1 200 OK"
+2025-02-26 19:32:45,369 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:32:45,371 - handlers - INFO - Получено текстовое сообщение от пользователя 5171183387: 👥 Управление чатами
+2025-02-26 19:32:45,371 - handlers - INFO - Необработанное сообщение: {'update_id': 38681072, 'message': {'chat': {'id': 5171183387, 'type': <ChatType.PRIVATE>, 'first_name': 'Vlad', 'username': 'Vlad_Christmas'}, 'text': '👥 Управление чатами', 'group_chat_created': False, 'message_id': 1752, 'delete_chat_photo': False, 'date': 1740598365, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'is_bot': False, 'username': 'Vlad_Christmas', 'first_name': 'Vlad', 'id': 5171183387, 'language_code': 'ru'}}}
+2025-02-26 19:32:45,545 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/sendMessage "HTTP/1.1 200 OK"
+2025-02-26 19:32:52,739 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:32:52,741 - handlers - INFO - Получено текстовое сообщение от пользователя 5171183387: 📊 Настройки уведомлений
+2025-02-26 19:32:52,741 - handlers - INFO - Необработанное сообщение: {'update_id': 38681073, 'message': {'chat': {'id': 5171183387, 'type': <ChatType.PRIVATE>, 'first_name': 'Vlad', 'username': 'Vlad_Christmas'}, 'text': '📊 Настройки уведомлений', 'group_chat_created': False, 'message_id': 1754, 'delete_chat_photo': False, 'date': 1740598372, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'is_bot': False, 'username': 'Vlad_Christmas', 'first_name': 'Vlad', 'id': 5171183387, 'language_code': 'ru'}}}
+2025-02-26 19:32:53,224 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/sendMessage "HTTP/1.1 200 OK"
+2025-02-26 19:32:54,944 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:32:54,945 - handlers - INFO - Получено текстовое сообщение от пользователя 5171183387: 🔙 Назад
+2025-02-26 19:32:54,945 - handlers - INFO - Получена команда /start от пользователя 5171183387
+2025-02-26 19:32:55,121 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/sendMessage "HTTP/1.1 200 OK"
+2025-02-26 19:32:55,122 - handlers - INFO - Главное меню успешно отображено
+2025-02-26 19:32:58,923 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:32:58,925 - handlers - INFO - Получено текстовое сообщение от пользователя 5171183387: 👥 Создать группу чатов
+2025-02-26 19:32:58,925 - handlers - INFO - Начало создания группы чатов пользователем 5171183387
+2025-02-26 19:32:59,113 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/sendMessage "HTTP/1.1 200 OK"
+2025-02-26 19:33:00,458 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:33:00,459 - handlers - INFO - Получено текстовое сообщение от пользователя 5171183387: 🔙 Отмена
+2025-02-26 19:33:00,459 - handlers - INFO - Получена команда /start от пользователя 5171183387
+2025-02-26 19:33:00,636 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/sendMessage "HTTP/1.1 200 OK"
+2025-02-26 19:33:00,637 - handlers - INFO - Главное меню успешно отображено
+2025-02-26 19:33:02,892 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:33:02,894 - handlers - INFO - Получено текстовое сообщение от пользователя 5171183387: 📝 Создать новое задание
+2025-02-26 19:33:02,894 - handlers - INFO - Начало создания задания от пользователя 5171183387
+2025-02-26 19:33:03,062 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/sendMessage "HTTP/1.1 200 OK"
+2025-02-26 19:33:13,043 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:33:23,197 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:33:33,403 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:33:40,984 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:33:40,986 - handlers - INFO - Received update: {'update_id': 38681078, 'message': {'chat': {'id': 5171183387, 'type': <ChatType.PRIVATE>, 'first_name': 'Vlad', 'username': 'Vlad_Christmas'}, 'group_chat_created': False, 'message_id': 1764, 'delete_chat_photo': False, 'date': 1740598420, 'supergroup_chat_created': False, 'photo': [{'width': 90, 'height': 51, 'file_id': 'AgACAgIAAxkBAAIG5Ge_bJRuYgaFm1E6O3im6yx9G6f3AAJr8DEbq8n4SRzcAAHkk5qo-QEAAwIAA3MAAzYE', 'file_size': 1189, 'file_unique_id': 'AQADa_AxG6vJ-El4'}, {'width': 320, 'height': 181, 'file_id': 'AgACAgIAAxkBAAIG5Ge_bJRuYgaFm1E6O3im6yx9G6f3AAJr8DEbq8n4SRzcAAHkk5qo-QEAAwIAA20AAzYE', 'file_size': 15846, 'file_unique_id': 'AQADa_AxG6vJ-Ely'}, {'width': 800, 'height': 452, 'file_id': 'AgACAgIAAxkBAAIG5Ge_bJRuYgaFm1E6O3im6yx9G6f3AAJr8DEbq8n4SRzcAAHkk5qo-QEAAwIAA3gAAzYE', 'file_size': 82601, 'file_unique_id': 'AQADa_AxG6vJ-El9'}, {'width': 1280, 'height': 723, 'file_id': 'AgACAgIAAxkBAAIG5Ge_bJRuYgaFm1E6O3im6yx9G6f3AAJr8DEbq8n4SRzcAAHkk5qo-QEAAwIAA3kAAzYE', 'file_size': 167738, 'file_unique_id': 'AQADa_AxG6vJ-El-'}], 'channel_chat_created': False, 'from': {'is_bot': False, 'username': 'Vlad_Christmas', 'first_name': 'Vlad', 'id': 5171183387, 'language_code': 'ru'}}}
+2025-02-26 19:33:40,987 - handlers - ERROR - Update Update(message=Message(channel_chat_created=False, chat=Chat(first_name='Vlad', id=5171183387, type=<ChatType.PRIVATE>, username='Vlad_Christmas'), date=datetime.datetime(2025, 2, 26, 19, 33, 40, tzinfo=<UTC>), delete_chat_photo=False, from_user=User(first_name='Vlad', id=5171183387, is_bot=False, language_code='ru', username='Vlad_Christmas'), group_chat_created=False, message_id=1764, photo=(PhotoSize(file_id='AgACAgIAAxkBAAIG5Ge_bJRuYgaFm1E6O3im6yx9G6f3AAJr8DEbq8n4SRzcAAHkk5qo-QEAAwIAA3MAAzYE', file_size=1189, file_unique_id='AQADa_AxG6vJ-El4', height=51, width=90), PhotoSize(file_id='AgACAgIAAxkBAAIG5Ge_bJRuYgaFm1E6O3im6yx9G6f3AAJr8DEbq8n4SRzcAAHkk5qo-QEAAwIAA20AAzYE', file_size=15846, file_unique_id='AQADa_AxG6vJ-Ely', height=181, width=320), PhotoSize(file_id='AgACAgIAAxkBAAIG5Ge_bJRuYgaFm1E6O3im6yx9G6f3AAJr8DEbq8n4SRzcAAHkk5qo-QEAAwIAA3gAAzYE', file_size=82601, file_unique_id='AQADa_AxG6vJ-El9', height=452, width=800), PhotoSize(file_id='AgACAgIAAxkBAAIG5Ge_bJRuYgaFm1E6O3im6yx9G6f3AAJr8DEbq8n4SRzcAAHkk5qo-QEAAwIAA3kAAzYE', file_size=167738, file_unique_id='AQADa_AxG6vJ-El-', height=723, width=1280)), supergroup_chat_created=False), update_id=38681078) caused error object NoneType can't be used in 'await' expression
+2025-02-26 19:33:40,987 - handlers - ERROR - Error details: object NoneType can't be used in 'await' expression
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_application.py", line 1234, in process_update
+    await coroutine
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/telegram/ext/_basehandler.py", line 157, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object NoneType can't be used in 'await' expression
+2025-02-26 19:33:40,990 - handlers - INFO - Update type: <class 'telegram._update.Update'>
+2025-02-26 19:33:40,990 - handlers - INFO - Update details: {'update_id': 38681078, 'message': {'chat': {'id': 5171183387, 'type': <ChatType.PRIVATE>, 'first_name': 'Vlad', 'username': 'Vlad_Christmas'}, 'group_chat_created': False, 'message_id': 1764, 'delete_chat_photo': False, 'date': 1740598420, 'supergroup_chat_created': False, 'photo': [{'width': 90, 'height': 51, 'file_id': 'AgACAgIAAxkBAAIG5Ge_bJRuYgaFm1E6O3im6yx9G6f3AAJr8DEbq8n4SRzcAAHkk5qo-QEAAwIAA3MAAzYE', 'file_size': 1189, 'file_unique_id': 'AQADa_AxG6vJ-El4'}, {'width': 320, 'height': 181, 'file_id': 'AgACAgIAAxkBAAIG5Ge_bJRuYgaFm1E6O3im6yx9G6f3AAJr8DEbq8n4SRzcAAHkk5qo-QEAAwIAA20AAzYE', 'file_size': 15846, 'file_unique_id': 'AQADa_AxG6vJ-Ely'}, {'width': 800, 'height': 452, 'file_id': 'AgACAgIAAxkBAAIG5Ge_bJRuYgaFm1E6O3im6yx9G6f3AAJr8DEbq8n4SRzcAAHkk5qo-QEAAwIAA3gAAzYE', 'file_size': 82601, 'file_unique_id': 'AQADa_AxG6vJ-El9'}, {'width': 1280, 'height': 723, 'file_id': 'AgACAgIAAxkBAAIG5Ge_bJRuYgaFm1E6O3im6yx9G6f3AAJr8DEbq8n4SRzcAAHkk5qo-QEAAwIAA3kAAzYE', 'file_size': 167738, 'file_unique_id': 'AQADa_AxG6vJ-El-'}], 'channel_chat_created': False, 'from': {'is_bot': False, 'username': 'Vlad_Christmas', 'first_name': 'Vlad', 'id': 5171183387, 'language_code': 'ru'}}}
+2025-02-26 19:33:41,468 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/sendMessage "HTTP/1.1 200 OK"
+2025-02-26 19:33:51,151 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:34:01,303 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:34:11,513 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:34:21,683 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:34:31,834 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:34:41,993 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:34:52,149 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:35:02,298 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:35:12,456 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:35:22,607 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:35:32,761 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:35:42,915 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:35:53,107 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:36:03,275 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:36:13,449 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:36:23,606 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:36:33,754 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:36:43,908 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:36:54,131 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:37:04,285 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:37:14,434 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:37:24,588 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:37:34,740 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:37:44,887 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:37:55,058 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:38:05,211 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:38:15,369 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:38:25,519 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:38:35,674 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:38:45,832 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:38:55,991 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:39:06,154 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:39:16,310 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:39:26,462 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:39:36,612 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:39:46,759 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:39:56,913 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:40:07,071 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:40:17,230 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:40:27,386 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:40:37,573 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:40:47,729 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:40:57,881 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:41:08,047 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:41:18,213 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:41:28,393 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:41:38,545 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:41:48,696 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:41:58,853 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:42:09,009 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:42:19,167 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:42:29,318 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:42:39,481 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:42:49,635 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:42:59,789 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:43:09,937 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:43:20,087 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:43:30,276 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:43:40,425 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:43:50,573 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:44:00,724 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:44:10,880 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:44:21,047 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:44:31,196 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:44:41,350 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:44:51,501 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:45:01,665 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:45:11,825 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:45:21,973 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:45:32,126 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:45:42,278 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:45:52,436 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:46:02,589 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:46:12,767 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:46:22,917 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:46:33,068 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:46:43,230 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:46:53,380 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:47:03,530 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:47:13,689 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:47:23,853 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:47:34,016 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:47:44,164 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:47:54,322 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:48:04,481 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:48:14,632 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:48:24,808 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:48:34,960 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:48:45,110 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:48:55,584 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:49:05,735 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:49:15,886 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:49:26,036 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:49:36,185 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:49:46,335 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:49:56,484 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:50:06,637 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:50:16,786 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:50:26,936 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:50:37,085 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:50:47,237 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:50:57,389 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
+2025-02-26 19:51:07,547 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8188505314:AAFnZRiMwjDEufaHQ4t8vTaJJqg0Ucqt2zQ/getUpdates "HTTP/1.1 200 OK"
